@@ -28,21 +28,15 @@
 
         var i, j, k; //迴圈變數
         var stars = '';
-        var tab = '';
-
         for (i = 0; i < 6; i++) {
-
             for (var j = 4; j >= i; j--) {
                 stars = stars + '　';
-
             }
             for (k = 0; k < (2 * i + 1); k++) {
                 stars = stars + '＊';
-
             }
             console.log(stars);
             stars = stars + "<br>";
-
         }
         document.getElementById('demo').innerHTML = stars;
 
